@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+
+    <p id="description">This is a survey form to collect data from users</p>
+    <form id="survey-form">
+      <label id="name-label">
+        Enter your name
+        <input id="name" type="text" placeholder="enter name here" required />
+      </label>
+
+      <label id="email-label"
+        >E-mail
+        <input id="email" type="email" placeholder="enter email" required
+      /></label>
+
+      <label id="number-label"
+        >Number
+        <input
+          id="number"
+          type="number"
+          min="0"
+          max="120"
+          placeholder="enter number"
+      /></label>
+      <select id="dropdown">
+        <option>(select gender)</option>
+        <option>(Male)</option>
+        <option>(Female)</option>
+      </select>
+      <fieldset>
+        <legend>Marital Status</legend>
+
+        <label for="married"
+          ><input
+            id="married"
+            type="checkbox"
+            name="status"
+            checked
+            value="1"
+          />
+          Married</label
+        >
+        <label for="un-married"
+          ><input id="un-married" type="checkbox" name="status" value="2" />
+          Un-Married</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Select the countries you visited</legend>
+        <label
+          ><input id="country" type="radio" name="country" checked value="3" />
+          Pak</label
+        >
+
+        <label
+          ><input id="country" type="radio" name="country" value="4" />
+          USA</label
+        >
+
+        <label
+          ><input id="country" type="radio" name="country" value="5" />
+          BAN</label
+        >
+      </fieldset>
+
+      <label for="referrer"
+        >How did you hear about us?
+        <select id="referrer" name="referrer">
+          <option value="">(select one)</option>
+          <option value="1">freeCodeCamp News</option>
+          <option value="2">freeCodeCamp YouTube Channel</option>
+          <option value="3">freeCodeCamp Forum</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+
+      <label
+        >leave comment:
+        <textarea rows="3" cols="30" placeholder="I like ....."></textarea>
+      </label>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
